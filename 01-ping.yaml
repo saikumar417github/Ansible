@@ -1,0 +1,5 @@
+- name: ping the server
+  hoststs: web
+  tasks: 
+  - name: ping the server
+    ping:
