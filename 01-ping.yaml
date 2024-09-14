@@ -1,5 +1,5 @@
 - name: ping the server
-  hoststs: localhost
+  hosts: localhost
   tasks: 
   - name: ping the server
     ping:
