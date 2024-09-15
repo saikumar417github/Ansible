@@ -1,0 +1,6 @@
+- name: variables from files
+  hosts: web
+  tasks:
+  - name: printing course information
+    debug:
+      msg: "Hi, Course is {{COURSE}} and duration is {{DURATION}}, platform is {{PLATFORM}}"
