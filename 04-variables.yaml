@@ -1,6 +1,10 @@
 - name: varibles
   hosts: localhost
+  vars:
+    COURSE: "DevOps"
+    DURATION: "120 hours"
+    PLATFORM: "Zoom"
   tasks:
   - name: printing a message
     debug:
-      msg: "Hi It is DevOps 81 batch, platform is zoom"
+      msg: "Hi It is {{COURSE}} 81 batch, Duration is {{DURATION}}, platform is {{PLATFORM}}"
