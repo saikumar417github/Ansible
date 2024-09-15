@@ -1,6 +1,12 @@
 - name: PLAY-01
   hosts: localhost
   tasks:
-  - name: print a message
+  - name: PLAY 01 TASK01
     debug: 
       msg: "This is ansible script"
+- name: PLAY-02
+  hosts: localhost
+  tasks: 
+  - name: PLAY02 TASK01
+    debug:
+      msg: "This is second play"
