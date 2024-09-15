@@ -1,0 +1,8 @@
+- name: install nginx and run
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: install nginx
+    package:
+      name: nginx
+      state: present
