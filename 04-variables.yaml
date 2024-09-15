@@ -1,0 +1,6 @@
+- name: varibles
+  hosts: localhost
+  tasks:
+  - name: printing a message
+    debug:
+      msg: "Hi It is DevOps 81 batch, platform is zoom"
