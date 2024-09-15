@@ -8,3 +8,8 @@
   - name: printing a message
     debug:
       msg: "Hi It is {{COURSE}} 81 batch, Duration is {{DURATION}}, platform is {{PLATFORM}}"
+  - name: printing a message again
+    vars:
+      COURSE: "Ansible"
+    debug:
+      msg: "Hi It is {{COURSE}} 81 batch, Duration is {{DURATION}}, platform is {{PLATFORM}}"
