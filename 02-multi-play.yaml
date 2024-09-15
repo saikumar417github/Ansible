@@ -2,4 +2,5 @@
   hosts: localhost
   tasks:
   - name: print a message
-    debug:
+    debug: 
+      msg: "This is ansible script"
