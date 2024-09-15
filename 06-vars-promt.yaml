@@ -1,0 +1,13 @@
+- name: varibales from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: COURSE
+    prompt: please enter the course name
+  - name: DURATION
+    prompt: please enter the duration of course
+  - name: PLATFORM
+    prompt: please enter the platofrm of the course training
+  tasks:
+  - name: printing course information
+    debug:
+      msg: "Hi, this course is {{COURSE}}, duration is {{DURATION}} and platform is {{PLATFORM}}"
