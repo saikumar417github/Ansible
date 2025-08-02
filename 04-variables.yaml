@@ -1,8 +1,8 @@
 - name: variables to print
   hosts: web
-  # vars:
-  #   COURSE: "DevOps with AWS"
-  #   PLATFORM: "online"
+  vars:
+    COURSE: "DevOps with AWS"
+    PLATFORM: "online"
   tasks:
   - name: print the information
     ansible.builtin.debug:
