@@ -1,0 +1,6 @@
+- name: varibales to print from files
+  hosts: web
+  tasks:
+  - name: print values from varibales files
+    ansible.builtin.debug:
+    msg: "Hi, I am leaning {{COURSE}} course, platform is {{PLATFORM}}"
