@@ -1,5 +1,7 @@
 - name: varibales to print from files
   hosts: web
+  vars_files:
+  - vars.yaml
   tasks:
   - name: print values from varibales files
     ansible.builtin.debug:
