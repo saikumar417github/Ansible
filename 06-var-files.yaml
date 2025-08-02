@@ -3,4 +3,4 @@
   tasks:
   - name: print values from varibales files
     ansible.builtin.debug:
-    msg: "Hi, I am leaning {{COURSE}} course, platform is {{PLATFORM}}"
+      msg: "Hi, I am leaning {{COURSE}} course, platform is {{PLATFORM}}"
