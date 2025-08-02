@@ -1,0 +1,6 @@
+- name: print variables though inventory
+  hosts: web
+  tasks:
+  - name: inventory variables
+    ansible.builtin.debug:
+      msg: "Hi, I am leaning {{COURSE}} course, platform is {{PLATFORM}}"
