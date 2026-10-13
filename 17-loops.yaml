@@ -1,5 +1,6 @@
 - name: install and delete applications packages loop
   hosts: web
+  become: yes
   tasks:
   - name: install and delete applications packages loop
     ansible.builtin.package:
