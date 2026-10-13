@@ -1,0 +1,12 @@
+- name: install and delete applications packages loop
+  hosts: web
+  tasks:
+  - name: install and delete applications packages loop
+    ansible.builtin.package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - { name: 'httpd' , state: present }
+    - { name: 'ansible' , state: absent }
+    - { name: 'git' , state: present }
+    - { name: 'httpd' , state: absent }
