@@ -24,5 +24,6 @@
       - S3
       - EC2
   tasks:
-  ansible.builtin.debug:
-    msg: "Hi I am leaning {{course}}, duration is {{duration}}, topics are {{topics}} and class live is {{live}}, tools are {{tools}}"
+  - name: print information
+    ansible.builtin.debug:
+      msg: "Hi I am leaning {{course}}, duration is {{duration}}, topics are {{topics}} and class live is {{live}}, tools are {{tools}}"
