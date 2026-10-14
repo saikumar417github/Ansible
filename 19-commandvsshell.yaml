@@ -1,5 +1,5 @@
 - name: command vs shell
   hosts: localhost
   tasks:
-  - name: execute the command
-    ansible.builtin.command: ls -lrt > /tmp/output.txt
+  - name: execute the command through shell
+    ansible.builtin.shell: ls -lrt > /tmp/output.txt
